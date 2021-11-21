@@ -1,35 +1,49 @@
-<html>
-
-<head lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Quiz</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="grid">
-        <div id="quiz">
-            <h1>Qoding Quiz and Chalenge</h1>
-
-
-            <p id="question">try to answer the following code-related questions within the timw limit . keep in mind
-                that icoorect answers will penalize your score/time by ten seconds!</p>
-            <div id="start1"><button id="startbutton">start quiz</button></div>
-            <div class="buttons">
-                <button id="btn0"><span id="choice0"></span></button><br>
-                <button id="btn1"><span id="choice1"></span></button><br>
-                <button id="btn2"><span id="choice2"></span></button><br>
-                <button id="btn3"><span id="choice3"></span></button><br>
+    <div class="layout-container">
+        <header>
+            <a href="score.html" id="highScores"> View High Scores</a>
+            <h1 id="countdown"></h1>
+        </header>
+        <main>
+            <div id="startpage" class="startpage">
+                <h2>Coding Quiz Challenge</h2>
+                <p>Try to answer the following code related questions within within the time limit. <br>
+                    Keep in mind that incorrect answers will penalize your score and time by ten seconds!
+                </p>
+                <button class="btn" id="start" type="submit">Start Quiz</button>
             </div>
 
-            <div id="count"></div>
+            <div id="questionsContainer" class="questionsContainer">
+                <div id="question" class="questions"></div>
+                <div id="answers" class="asnwers"></div>
+                <div id="prompt" class="prompt"></div>
+            </div>
 
-        </div>
+            <div id ="score" class="score">
+                <div id="scoreArea" class="scoreArea"></div>
+                <form id="inName" class="inName"></form>
+                <div id="saveButton" class="saveButon"></div>
+            </div>
+            <div id ="highScores" class="highScores">
+                <div id="high-score-title"></div>
+            </div>
+
+        </main>
     </div>
-
 
     <script src="./assets/js/script.js"></script>
 
-</body>
 
+    
+</body>
 </html>
